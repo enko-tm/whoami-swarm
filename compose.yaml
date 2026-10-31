@@ -10,9 +10,6 @@ services:
       - test-net
     deploy:
       replicas: 1
-      update_config:
-        parallelism: 1
-        delay: 5s
       restart_policy:
         condition: on-failure
       resources:
